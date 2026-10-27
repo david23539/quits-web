@@ -8,6 +8,9 @@
   --quits-soft: #DDEFE5;
   --owe: #A63A24;
   --sun: #F2C14E;
+  --icon-bg: #17694A;
+  --icon-a: #DDEFE5;
+  --icon-b: #F2C14E;
   --radius-chip: 8px;
   --radius-card: 14px;
   --radius-sheet: 22px;
@@ -25,6 +28,9 @@
     --quits-soft: #18392A;
     --owe: #FF8A70;
     --sun: #E0B04A;
+    --icon-bg: #141513;
+    --icon-a: #4CC38A;
+    --icon-b: #E0B04A;
   }
 }
 
@@ -97,7 +103,11 @@ a {
   font-size: 1.35rem;
 }
 
-.mark { width: 48px; height: 24px; flex: none; }
+.mark { width: 36px; height: 36px; flex: none; border-radius: 8px; }
+
+@media (prefers-color-scheme: dark) {
+  .mark, .mark-big { outline: 1px solid var(--line); }
+}
 
 .nav {
   display: flex;
@@ -139,8 +149,9 @@ a {
 }
 
 .hero .mark-big {
-  width: 96px;
-  height: 48px;
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
   margin-bottom: 20px;
 }
 
